@@ -3,14 +3,7 @@
 //  include "../application/view/html.php";
 class userModels extends database{
     public function mydata(){
-        $name= "Ajay Varma";
-        $email = "varmaajay@gmail.com";
-        $password= "ajay@123";
-    //    if( $this->query("INSERT INTO student(name,email,password) VALUES(?,?,?)",[$name,$email,$password])){
-    //     return true;
-    //    }else{
-    //     return false;
-    //    }
+     
     if($this->query("SELECT * FROM student")){
     
        return $this->fetchAll();
@@ -56,6 +49,16 @@ public function addstudentmodel($data){
         return false;
        }
 }
+
+public function login($email, $password){
+    var_dump($email);exit;
+    if($this->query("SELECT * FROM student WHERE email = ? && password = ? ",[$email,$password])){
+        return true;
+    }else{
+     return false;
+    }
+}
+
 }
 
 ?>

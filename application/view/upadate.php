@@ -16,7 +16,7 @@
 <div class="container-fluid px-1 py-5 mx-auto">
     <div class="row d-flex justify-content-center">
         <div class="col-xl-7 col-lg-8 col-md-9 col-11 text-center">
-            <h3>Student Upadate Form <?php echo BASEURL;?></h3>
+            <h3>Student Upadate Form </h3>
            
             <div class="card">
                 
